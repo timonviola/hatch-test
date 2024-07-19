@@ -43,7 +43,7 @@ extra-dependencies = [
     "pre-commit == 3.7.*",
     "ruff == 0.4.4",
     "mypy == 1.10.*",
-    "versioningit == 3.1.*",
+    "versioningit @ git+https://github.com/jwodder/versioningit@gh-89",
     "towncrier == 23.11.*",
 ]
 
@@ -62,7 +62,7 @@ check = "mypy --install-types --non-interactive {args:src/hatcht tests}"
 [tool.hatch.envs.test]
 extra-dependencies = [
     "pytest >= 8.0.0",
-    "versioningit == 3.1.*",
+    "versioningit @ git+https://github.com/jwodder/versioningit@gh-89",
     "pytest-cov",
     "pytest-mock >= 3.14.0",
 ]
